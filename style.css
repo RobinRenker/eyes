@@ -1,0 +1,73 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626;
+}
+.face{
+    display: flex;
+    flex-direction: row;
+}
+.eye{
+    width: 20vmin;
+    height: 20vmin;
+    background-color: #DB2F3C;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eye:nth-child(2){
+    background: none;
+}
+.eye:nth-child(3){
+    transform: scaleX(-1);
+}
+.eyelid{
+    position: absolute;
+    left: -2vmin;
+    width: 24vmin;
+    height: 24vmin;
+    animation-name: eyelid;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    background-image: url("eyelid.svg");
+    background-position: center;
+    background-size: cover;
+}
+.innereye{
+    background-color: #262626;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+@keyframes eyelid {
+    0% {transform:translateY(-20vmin)} /*tired*/
+    5% {transform:translateY(-10vmin)}
+    10% {transform:translateY(-12vmin)}
+
+    20% {transform:translateY(-12vmin)} /*angry*/
+    25% {transform:translateY(-15vmin) rotate(15deg) translateX(4vmin);}
+    30% {transform:translateY(-15vmin) rotate(15deg) translateX(4vmin);}
+    35% {transform:translateY(-13vmin) rotate(20deg) translateX(4vmin);}
+
+    40% {transform:translateY(-13vmin) rotate(20deg) translateX(4vmin);} /*tired*/
+    45% {transform:translateY(1vmin)}
+    50% {transform:translateY(1vmin)}
+
+    60% {transform:translateY(-14vmin) translateX(-4vmin) rotate(-15deg)}
+    70% {transform:translateY(-14vmin) translateX(-4vmin) rotate(-15deg)}
+
+    75% {transform:translateY(-14vmin) translateX(-4vmin) rotate(-15deg)}
+    80% {transform:translateY(-9vmin) translateX(-4vmin) rotate(-15deg)}
+    85% {transform:translateY(-14vmin) translateX(-4vmin) rotate(-15deg)}
+
+    90% {transform:translateY(-14vmin) translateX(-4vmin) rotate(-15deg)}
+
+    100% {transform:translateY(-20vmin)}
+}
