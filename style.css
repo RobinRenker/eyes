@@ -47,27 +47,27 @@ html,body{
     border-radius: 50%;
 }
 @keyframes eyelid {
-    0% {transform:translateY(-20vmin)} /*tired*/
-    5% {transform:translateY(-10vmin)}
-    10% {transform:translateY(-12vmin)}
+    0% {transform:translate(0,-20vmin)} /*tired*/
+    5% {transform:translate(0,-10vmin)}
+    10% {transform:translate(0,-12vmin)}
 
-    20% {transform:translateY(-12vmin)} /*angry*/
-    25% {transform:translateY(-15vmin) rotate(15deg) translateX(4vmin);}
-    30% {transform:translateY(-15vmin) rotate(15deg) translateX(4vmin);}
-    35% {transform:translateY(-13vmin) rotate(20deg) translateX(4vmin);}
+    20% {transform:translate(0,-12vmin)} /*angry*/
+    25% {transform:translate(4vmin,-15vmin) rotate(15deg)}
+    30% {transform:translate(4vmin,-15vmin) rotate(15deg)}
+    35% {transform:translate(4vmin,-13vmin) rotate(20deg)}
 
-    40% {transform:translateY(-13vmin) rotate(20deg) translateX(4vmin);} /*tired*/
-    45% {transform:translateY(1vmin)}
-    50% {transform:translateY(1vmin)}
+    40% {transform:translate(4vmin,-13vmin) rotate(20deg)} /*tired*/
+    45% {transform:translate(0,1vmin)}
+    50% {transform:translate(0,1vmin)}
 
-    60% {transform:translateY(-14vmin) translateX(-4vmin) rotate(-15deg)}
-    70% {transform:translateY(-14vmin) translateX(-4vmin) rotate(-15deg)}
+    60% {transform:translate(-4vmin,-14vmin) rotate(-15deg)}
+    70% {transform:translate(-4vmin,-14vmin) rotate(-15deg)}
 
-    75% {transform:translateY(-14vmin) translateX(-4vmin) rotate(-15deg)}
-    80% {transform:translateY(-9vmin) translateX(-4vmin) rotate(-15deg)}
-    85% {transform:translateY(-14vmin) translateX(-4vmin) rotate(-15deg)}
+    75% {transform:translate(-4vmin,-14vmin) rotate(-15deg)}
+    80% {transform:translate(-4vmin,-9vmin) rotate(-15deg)}
+    85% {transform:translate(-4vmin,-14vmin) rotate(-15deg)}
 
-    90% {transform:translateY(-14vmin) translateX(-4vmin) rotate(-15deg)}
+    90% {transform:translate(-4vmin,-14vmin) rotate(-15deg)}
 
-    100% {transform:translateY(-20vmin)}
+    100% {transform:translate(0,-20vmin)}
 }
